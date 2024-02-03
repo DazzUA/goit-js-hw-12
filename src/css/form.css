@@ -1,0 +1,111 @@
+.container {
+  width: 1440px;
+  padding-top: 36px;
+}
+.search-form {
+  width: 371px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+input:hover,
+input:focus {
+  border-color: #000000;
+}
+input:focus-within {
+  border-color: #4e75ff;
+}
+
+button {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #4e75ff;
+  border-color: beige;
+}
+button:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+.gallery-item {
+  width: 250px;
+  height: 250px;
+  border: black;
+}
+.gallery-img {
+  width: 250px;
+  height: 200px;
+}
+.description-wrapper {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+}
+.value-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.btn-load-more {
+  margin: 0 auto;
+}
